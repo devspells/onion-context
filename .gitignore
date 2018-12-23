@@ -1,0 +1,9 @@
+# npm stuff
+node_modules/
+
+# vim stuff
+*.swp
+*.swo
+
+# dist stuff
+dist/

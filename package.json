@@ -1,0 +1,19 @@
+{
+  "name": "onion-context",
+  "version": "1.0.0",
+  "description": "extremely simple state managment for react/preact projects based on contexts",
+  "main": "dist/main.js",
+  "scripts": {
+    "lint": "eslint src/index.js",
+    "build": "webpack --mode=production"
+  },
+  "author": "idbolshakov@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
