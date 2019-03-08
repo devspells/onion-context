@@ -1,0 +1,7 @@
+example/
+src/
+docs/
+
+webpack.config.js
+CHANGELOG.md
+README.md
