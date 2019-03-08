@@ -1,3 +1,6 @@
+import { IContextProviderHOCFacade } from './interfaces'
+
+
 /* JSX
  * export default (contextName, ContextState, Provider, renderLib) => (
  *   Component => (
@@ -9,13 +12,13 @@
  *   )
  * );
  */
-export default (contextName, ContextState, provider, renderLib) => (
+export default (facade: IContextProviderHOCFacade) => (
   Component => (
     componentProps => (
-      renderLib.createElement(
-        ContextState,
-        { contextName, provider, renderLib },
-        renderLib.createElement(Component, {...componentProps})
+      facade.renderLib.createElement(
+        facade.ContextStateClass,
+        { contextName: facade.contextName, Provider: facade.Provider, renderLib: facade.renderLib },
+        facade.renderLib.createElement(Component, {...componentProps})
       )
     )
   )

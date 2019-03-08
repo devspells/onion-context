@@ -1,3 +1,5 @@
+import { IContextConsumerHOCFacade } from './interfaces';
+
 /* JSX
  * export default Consumer => (
  *   Component => componentProps => (
@@ -7,13 +9,13 @@
  *   )
  * );
  */
-export default (Consumer, renderLib) => (
+export default (facade): any => (
   Component => (
     componentProps => (
-      renderLib.createElement(
-        Consumer,
+      facade.renderLib.createElement(
+        facade.Consumer,
         null, 
-        contextProps => renderLib.createElement(Component, {...componentProps, ...contextProps})
+        contextProps => facade.renderLib.createElement(Component, {...componentProps, ...contextProps})
       )
     )
   )

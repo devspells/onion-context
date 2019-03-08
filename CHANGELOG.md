@@ -3,6 +3,10 @@ project changelog
 
 All notable changes will be documented in this file
 
+[1.2.0] - 08.03.2019
+Added
+* typescript integration
+
 [1.1.0] - 08.03.2019
 Added
 * react example
