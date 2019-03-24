@@ -3,6 +3,10 @@ project changelog
 
 All notable changes will be documented in this file
 
+[1.3.0] - 24.03.2019
+Added
+* typescript lib version for distribution
+
 [1.2.0] - 08.03.2019
 Added
 * typescript integration
